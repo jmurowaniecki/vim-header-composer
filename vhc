@@ -44,6 +44,10 @@ str_repeat() {
     done
 }
 
+remove_trail() {
+    sed -e 's/[ ]*$//g'
+}
+
 line() {
     [ $# -eq 1 ] \
     && str_repeat  "$((size + adjust))" "${1}" \
@@ -53,11 +57,11 @@ line() {
 }
 
 line_top() {
-    line 0 1
+    line 0 1 | remove_trail
 }
 
 line_bottom() {
-    line 2 3
+    line 2 3 | remove_trail
 }
 
 trap  line_top \
@@ -65,6 +69,6 @@ EXIT; line_bottom
 
 while read -r string
 do tab=$(printf '%*s' $((size - ${#string})) "")
-    $_e "${lines[3]}${string}${tab}${lines[1]}"
+    $_e "${lines[3]}${string}${tab}${lines[1]}" | remove_trail
 done  < "${temporary}"
 rm      "${temporary}"
