@@ -4,202 +4,157 @@
 
  Instead of using the characters and the standard format you can set the string to process using styles as seen below.
 
+---
 
-
-
-------
 ### Using 'sides'
 
-Example using `#!/usr/bin/env bash
-
-./vhc <<< "vhc:sides;Example using 'sides'."`.
+Example using `./vhc <<< "vhc:sides;Example using 'sides'."`.
 ```
 ⎡                        ⎤
 ⎢ Example using 'sides'. ⎥
 ⎣                        ⎦
 ```
 
+---
 
-
-------
 ### Using 'prettybox'
 
-Example using `#!/usr/bin/env bash
-
-./vhc <<< "vhc:prettybox;Example using 'prettybox'."`.
+Example using `./vhc <<< "vhc:prettybox;Example using 'prettybox'."`.
 ```
 ┌────────────────────────────┐
 │ Example using 'prettybox'. │
 └────────────────────────────┘
 ```
 
+---
 
-
-------
 ### Using 'pretty'
 
-Example using `#!/usr/bin/env bash
-
-./vhc <<< "vhc:pretty;Example using 'pretty'."`.
+Example using `./vhc <<< "vhc:pretty;Example using 'pretty'."`.
 ```
 ┌─────────────────────────┐
 │ Example using 'pretty'. │
 └─────────────────────────┘
 ```
 
+---
 
-
-------
 ### Using 'quotes'
 
-Example using `#!/usr/bin/env bash
-
-./vhc <<< "vhc:quotes;Example using 'quotes'."`.
+Example using `./vhc <<< "vhc:quotes;Example using 'quotes'."`.
 ```
                           "
- Example using 'quotes'. 
-"                          
+ Example using 'quotes'.
+"
 ```
 
+---
 
-
-------
 ### Using 'docblock'
 
-Example using `#!/usr/bin/env bash
-
-./vhc <<< "vhc:docblock;Example using 'docblock'."`.
+Example using `./vhc <<< "vhc:docblock;Example using 'docblock'."`.
 ```
-/**                            
- * Example using 'docblock'. 
- **/                            
+/**
+ * Example using 'docblock'.
+ **/
 ```
 
+---
 
-
-------
 ### Using 'cccomment'
 
-Example using `#!/usr/bin/env bash
-
-./vhc <<< "vhc:cccomment;Example using 'cccomment'."`.
+Example using `./vhc <<< "vhc:cccomment;Example using 'cccomment'."`.
 ```
-/**                             
- ** Example using 'cccomment'. 
- **/                             
+/**
+ ** Example using 'cccomment'.
+ **/
 ```
 
+---
 
-
-------
 ### Using 'ccomment'
 
-Example using `#!/usr/bin/env bash
-
-./vhc <<< "vhc:ccomment;Example using 'ccomment'."`.
+Example using `./vhc <<< "vhc:ccomment;Example using 'ccomment'."`.
 ```
-/*                            
- * Example using 'ccomment'. 
- */                            
+/*
+ * Example using 'ccomment'.
+ */
 ```
 
+---
 
-
-------
 ### Using 'lcomment'
 
-Example using `#!/usr/bin/env bash
-
-./vhc <<< "vhc:lcomment;Example using 'lcomment'."`.
+Example using `./vhc <<< "vhc:lcomment;Example using 'lcomment'."`.
 ```
-//                            
-// Example using 'lcomment'. 
-//                            
+//
+// Example using 'lcomment'.
+//
 ```
 
+---
 
-
-------
 ### Using 'box'
 
-Example using `#!/usr/bin/env bash
-
-./vhc <<< "vhc:box;Example using 'box'."`.
+Example using `./vhc <<< "vhc:box;Example using 'box'."`.
 ```
 +----------------------+
 | Example using 'box'. |
 +----------------------+
 ```
 
+---
 
-
-------
 ### Using 'star'
 
-Example using `#!/usr/bin/env bash
-
-./vhc <<< "vhc:star;Example using 'star'."`.
+Example using `./vhc <<< "vhc:star;Example using 'star'."`.
 ```
 *************************
 * Example using 'star'. *
 *************************
 ```
 
+---
 
-
-------
 ### Using 'stars'
 
-Example using `#!/usr/bin/env bash
-
-./vhc <<< "vhc:stars;Example using 'stars'."`.
+Example using `./vhc <<< "vhc:stars;Example using 'stars'."`.
 ```
 **************************
 * Example using 'stars'. *
 **************************
 ```
 
+---
 
-
-------
 ### Using 'asterisk'
 
-Example using `#!/usr/bin/env bash
-
-./vhc <<< "vhc:asterisk;Example using 'asterisk'."`.
+Example using `./vhc <<< "vhc:asterisk;Example using 'asterisk'."`.
 ```
 *****************************
 * Example using 'asterisk'. *
 *****************************
 ```
 
+---
 
-
-------
 ### Using 'ernjs'
 
-Example using `#!/usr/bin/env bash
-
-./vhc <<< "vhc:ernjs;Example using 'ernjs'."`.
+Example using `./vhc <<< "vhc:ernjs;Example using 'ernjs'."`.
 ```
 ################################
 #### Example using 'ernjs'. ####
 ################################
 ```
 
+---
 
-
-------
 ### Using 'ernando'
 
-Example using `#!/usr/bin/env bash
-
-./vhc <<< "vhc:ernando;Example using 'ernando'."`.
+Example using `./vhc <<< "vhc:ernando;Example using 'ernando'."`.
 ```
 ##################################
 #### Example using 'ernando'. ####
 ##################################
 ```
-
-
 
