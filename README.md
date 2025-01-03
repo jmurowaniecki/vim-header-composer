@@ -7,7 +7,7 @@
 [ico-version]: https://img.shields.io/github/v/tag/jmurowaniecki/vim-header-composer?sort=semver&style=flat-square
 
 [![StyleCI][ico-styleci]][url-styleci]
-[Codacy][ico-codacy]][url-codacy]
+[![Codacy][ico-codacy]][url-codacy]
 [![Version][ico-version]](#)
 
 VIM header composer is an utility script wrote in shell very simple to make header's based on comments in vim such as above.
