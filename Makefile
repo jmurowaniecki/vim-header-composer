@@ -95,12 +95,12 @@ samples: # Build tests and EXAMPLES.md using possible style options.
 	"Instead of using the characters and the standard format you can set the string to process using styles as seen below.\n" \
 	> "$${TARGET}"; \
 	txt='Example using '; \
+	head='#!/usr/bin/env bash\n\n'; \
 	for opt in $$OPTIONS; \
-	do  TEST=tests/testing_style_$${opt}.sh; \
-		echo "Creating test \e[1m$${opt}\e[0m.."; \
+	do  TEST="tests/testing_style_$${opt}.sh"; \
+		echo "Creating test \e[;1m$${opt}\e[0m.."; \
 		echo "---\n\n### Using '$${opt}'\n" >> "$${TARGET}"; \
-		echo "#!/usr/bin/env bash\n" \
-		     "\n./vhc <<< \"vhc:""$${opt}"";$${txt}'$${opt}'.\"" > "$${TEST}"; \
+		echo "$${head}./vhc <<< \"vhc:""$${opt}"";$${txt}'$${opt}'.\"" > "$${TEST}"; \
 		echo "$${txt}\`$$(tail -n1 "$${TEST}")\`.\n\`\`\`" >> "$${TARGET}"; \
 		echo "vhc:$${opt};$${txt}'$${opt}'." | ./vhc >  "$${TEST}.result"; \
 		echo "$$(cat "$${TEST}.result")\n\`\`\`\n"   >> "$${TARGET}"; \
