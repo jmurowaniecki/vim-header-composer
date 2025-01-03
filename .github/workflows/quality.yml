@@ -17,12 +17,12 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Run ShellCheck
-      uses: ludeeus/action-shellcheck@master
+      uses: ludeeus/action-shellcheck@00cae500b08a931fb5698e11e79bfbd38e612a38
 
   validate:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Run Makefile tests
       run: |
         make samples
